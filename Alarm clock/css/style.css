@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #390050;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #feffdf;
+}
+
+#container {
+  height: 30em;
+  width: 30em;
+  margin: 1em;
+  border-radius: 10px;
+  background-color: #de5b7b;
+  padding: 1em;
+}
+
+#time-area {
+  height: 9em;
+  width: 100%;
+  background-color: #98ded3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.seperator {
+  position: relative;
+  top: -2px;
+}
+
+#alarm-area {
+  position: relative;
+  height: 19em;
+  width: 100%;
+  background-color: #668ba4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+  padding: 0.5em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #de5b7b;
+  margin: 1em 0 1.3em 0;
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 4px 3px 14px -4px rgba(57, 0, 80, 1);
+}
+
+#saved-alarms {
+  height: 14em;
+  width: 80%;
+  margin: auto;
+  padding: 1em;
+  margin-top: 0em;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 2px solid rgba(57, 0, 80, 1);
+}
+
+#saved-alarms input {
+  margin: 5px 3px;
+}
+
+#settings-area {
+  height: 17em;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  padding: 0.1em 1em 0 1em;
+  border: 2px solid rgba(57, 0, 80, 1);
+}
+
+#settings-area input {
+  width: 50%;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+#add-alarm {
+  position: relative;
+  bottom: -3.5em;
+}
+
+/* @media (max-width: 420px) {
+  #add-alarm {
+    left: 43%;
+  }
+} */
+
+#settings-close-btn {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+
+.delete-alarm-btn {
+  position: relative;
+  top: 2px;
+  margin-right: 2px;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+}
+
+#alarm-alert-screen {
+  height: 17em;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  padding: 1em;
+  border: 2px solid rgba(57, 0, 80, 1);
+}
+
+#end-alarm-btn {
+  position: relative;
+  bottom: -10em;
+}
+
+/*class that hides an area*/
+.dont-show {
+  display: none;
+  opacity: 0;
+}

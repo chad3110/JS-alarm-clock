@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- start of the clock time area -->
+      <div id="time-area">
+        <p id="day" class="info">Monday</p>
+        <p id="date" class="info">18 February 2018</p>
+        <div id="time">
+          <span id="hours" class="info">18</span>
+          <span class="info seperator">:</span>
+          <span id="minutes" class="info">00</span>
+          <span class="info seperator">:</span>
+          <span id="seconds" class="info">00</span>
+        </div>
+      </div>
+      <!-- end of the clock time area -->
+
+      <!-- start of the alarm area -->
+      <div id="alarm-area">
+        <h3>Alarms</h3>
+        <!-- set alarms go into this div -->
+        <div id="saved-alarms"></div>
+
+        <!-- button to opend the alarm settings -->
+        <button id="alarm-btn" class="btn">Create Alarm</button>
+
+        <!-- start of the alarm settings area -->
+        <div id="settings-area" class="dont-show">
+          <p id="settings-close-btn">&times;</p>
+          <lable>Enter alarm date:</lable>
+          <input id="input-date" type="date" /><br />
+          <lable>Enter alarm time:</lable>
+          <input id="input-time" type="time" /><br />
+          <lable class="msg">Enter alarm msg:</lable>
+          <input class="msg" id="input-text" type="text" /><br />
+          <button id="add-alarm" class="btn">Add</button>
+        </div>
+        <!-- end of the settings area -->
+
+        <!-- start of alarm alert screen -->
+        <div id="alarm-alert-screen" class="dont-show">
+          <p id="alarm-screen-text"></p>
+          <button id="end-alarm-btn" class="btn">End This Alarm</button>
+        </div>
+        <!-- start of alarm alert screen -->
+      </div>
+
+      <audio id="alarm-sound" src="sounds/DAO - Lifted.mp3" type="mp3"></audio>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
